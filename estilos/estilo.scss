@@ -12,7 +12,7 @@ $colorTexto: #9fa8f0;
 $colorFondo: #fbf8ee;
 $colorBorde: #22224f;
 $colorSubTitulo: #473c8b;
-$colorBoton: #22224f;
+$colorBoton: #473c8b;
 
 
 /*Estilos Generales*/
@@ -50,9 +50,9 @@ body {
 
 	h1 {
 		font-size: 50px;
-		margin: 50px;
+		margin: 10px;
 		color: $colorTitulo;
-		text-align: right;
+		
 		text-decoration: underline;
 		font-style: bold;
 	}
@@ -88,9 +88,22 @@ body {
 
 main	{
 	background-color:$colorFondo;
-		.header{
-			text-align: center;
-		}		
+}
+
+.header{
+	.foto {
+		float: left;
+		width: 100px;
+		height: 100px;
+		
+	  }
+	  
+	  h1 {
+		position: relative;
+		display: inline-block;
+		top: 18px;
+		left: 10px;
+	  }
 }
 
 /*Estilos de Home*/
@@ -120,7 +133,7 @@ aside	{
 /*Botones*/
 .btn	{
 	background-color: $colorBoton;
-	color: #fbf8ee;
+	color: $colorFondo;
 	text-decoration: none;
 }
 
@@ -157,7 +170,6 @@ color: white;
 .container	{
 	border-radius: 5px;
 	background-color: $colorFondo;
-	padding: 10px;
 	position: relative;
 
 	@media (max-width: 768px) {
@@ -166,7 +178,6 @@ color: white;
 			margin-top: 0;
 			position: relative;
 			flex-direction: column;
-
 		}
 	  }
 
@@ -174,7 +185,6 @@ color: white;
 		float: right;
 		width: 50%;
 		margin-top: 6px;
-		padding: 20px;
 	  }
 	  .row:after {
 		position: relative;
@@ -185,10 +195,19 @@ color: white;
 
 	  input[type=text], select {
 		width: 100%;
-		padding: 12px;
+		padding: 10px;
 		border: 1px solid $colorTitulo;
 		margin-top: 6px;
-		margin-bottom: 16px;
+		margin-bottom: 5px;
+		resize: vertical;
+	  }
+
+	  input[type=email], select {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid $colorTitulo;
+		margin-top: 6px;
+		margin-bottom: 5px;
 		resize: vertical;
 	  }
 	  

@@ -47,9 +47,8 @@ body {
 
 body h1 {
   font-size: 50px;
-  margin: 50px;
+  margin: 10px;
   color: #22224f;
-  text-align: right;
   text-decoration: underline;
   font-style: bold;
 }
@@ -90,8 +89,17 @@ main {
   background-color: #fbf8ee;
 }
 
-main .header {
-  text-align: center;
+.header .foto {
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+
+.header h1 {
+  position: relative;
+  display: inline-block;
+  top: 18px;
+  left: 10px;
 }
 
 /*Estilos de Home*/
@@ -125,7 +133,7 @@ aside {
 /*Estilos de *Componentes*/
 /*Botones*/
 .btn {
-  background-color: #22224f;
+  background-color: #473c8b;
   color: #fbf8ee;
   text-decoration: none;
 }
@@ -169,7 +177,6 @@ aside {
 .container {
   border-radius: 5px;
   background-color: #fbf8ee;
-  padding: 10px;
   position: relative;
 }
 
@@ -189,7 +196,6 @@ aside {
   float: right;
   width: 50%;
   margin-top: 6px;
-  padding: 20px;
 }
 
 .container .row:after {
@@ -204,10 +210,19 @@ aside {
 
 .container input[type=text], .container select {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid #22224f;
   margin-top: 6px;
-  margin-bottom: 16px;
+  margin-bottom: 5px;
+  resize: vertical;
+}
+
+.container input[type=email], .container select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #22224f;
+  margin-top: 6px;
+  margin-bottom: 5px;
   resize: vertical;
 }
 
