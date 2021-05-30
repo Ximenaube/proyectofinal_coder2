@@ -33,6 +33,15 @@ $colorBoton: #473c8b;
 	.foto{
 		width: 100%;
 	}
+	.cards{
+		flex-direction: column;
+	}
+	.card_index {
+		  width: 100%;
+		  display: block;
+		  margin-bottom: 20px;
+		}
+
 }
 
 *	{
@@ -90,20 +99,20 @@ main	{
 	background-color:$colorFondo;
 }
 
-.header{
+.header {
+	display: flex;
+	align-content: flex-start;
+	
 	.foto {
-		float: left;
 		width: 100px;
 		height: 100px;
-		
 	  }
-	  
-	  h1 {
-		position: relative;
-		display: inline-block;
+	h1 {
 		top: 18px;
 		left: 10px;
 	  }
+	  
+
 }
 
 /*Estilos de Home*/
@@ -118,7 +127,7 @@ main	{
 	.carousel{	
 		max-height: 1000px;
 		max-width: 1000px;
-		margin: 10px;
+		align-self: center;
 	}	
 }
 
@@ -159,6 +168,58 @@ text-align: left;
 background-color: $colorSubTitulo;
 color: white;
 }
+/*Estilos de Cards*/
+
+.cards {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px;
+	
+	.item1{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		padding: 16px;
+		align-content: center;
+		
+	}
+	.item2{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		padding: 16px;
+		align-content: center;
+		
+	}
+	.item3{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		padding: 16px;
+		align-content: center;
+		
+	}
+	.item4{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		padding: 16px;
+		align-content: center;
+		
+	}
+	.item5{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		padding: 16px;
+		align-content: center;
+		
+	}
+	.item6{
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+		padding: 16px;
+		align-content: center;
+		
+	}
+}
+
+.img_card{
+	align-items: center;
+	:hover{
+		transform:scale(1.25,1.25);
+		overflow: hidden;
+	}
+}
 
 /*Estilos de *Footer*/
 
@@ -171,6 +232,8 @@ color: white;
 	border-radius: 5px;
 	background-color: $colorFondo;
 	position: relative;
+	padding-top: 25px;
+
 
 	@media (max-width: 768px) {
 		.column, input[type=submit] {
@@ -223,54 +286,6 @@ color: white;
 		background-color: $colorTitulo;
 	  }
 	
-}
-
-/*Estilos de Cards*/
-
-.cards{
-	display: grid;
-	grid-template-areas: 'item1 item2 item3'
-						'item4 item5 item6';
-	grid-template-columns: auto auto auto; 
-	
-	.img_card{
-		:hover{
-			transform:scale(1.25,1.25);
-			overflow: hidden;
-		}
-
-}
-
-	.item1{
-		grid-area: item1;
-		text-align: center;
-	}
-	.item2{
-		grid-area: item2;
-		text-align: center;
-	}
-	.item3{
-		grid-area: item3;
-		text-align: center;
-	}
-	.item4{
-		grid-area: item4;
-		text-align: center;
-	}
-	.item5{
-		grid-area: item5;
-		text-align: center;
-	}
-	.item6{
-		grid-area: item6;
-		text-align: center;
-	}
-
-}
-
-.hover{
-	transform:scale(1,1.25);
-	overflow: hidden;
 }
 	
 /*Estilo de -> Reciclaje*/

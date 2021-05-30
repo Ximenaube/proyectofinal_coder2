@@ -28,6 +28,17 @@ Violeta Oscuro #22224f
   .foto {
     width: 100%;
   }
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card_index {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 * {
@@ -89,15 +100,20 @@ main {
   background-color: #fbf8ee;
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
 .header .foto {
-  float: left;
   width: 100px;
   height: 100px;
 }
 
 .header h1 {
-  position: relative;
-  display: inline-block;
   top: 18px;
   left: 10px;
 }
@@ -119,7 +135,9 @@ main {
 .banner .carousel {
   max-height: 1000px;
   max-width: 1000px;
-  margin: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 aside {
@@ -165,6 +183,77 @@ aside {
   color: white;
 }
 
+/*Estilos de Cards*/
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 10px;
+}
+
+.cards .item1 {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cards .item2 {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cards .item3 {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cards .item4 {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cards .item5 {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.cards .item6 {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.img_card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img_card :hover {
+  -webkit-transform: scale(1.25, 1.25);
+          transform: scale(1.25, 1.25);
+  overflow: hidden;
+}
+
 /*Estilos de *Footer*/
 .footer1 {
   width: -webkit-fit-content;
@@ -178,6 +267,7 @@ aside {
   border-radius: 5px;
   background-color: #fbf8ee;
   position: relative;
+  padding-top: 25px;
 }
 
 @media (max-width: 768px) {
@@ -236,69 +326,6 @@ aside {
 
 .container input[type=submit]:hover {
   background-color: #22224f;
-}
-
-/*Estilos de Cards*/
-.cards {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: 'item1 item2 item3' 'item4 item5 item6';
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-}
-
-.cards .img_card :hover {
-  -webkit-transform: scale(1.25, 1.25);
-          transform: scale(1.25, 1.25);
-  overflow: hidden;
-}
-
-.cards .item1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: item1;
-  text-align: center;
-}
-
-.cards .item2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: item2;
-  text-align: center;
-}
-
-.cards .item3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: item3;
-  text-align: center;
-}
-
-.cards .item4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: item4;
-  text-align: center;
-}
-
-.cards .item5 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: item5;
-  text-align: center;
-}
-
-.cards .item6 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: item6;
-  text-align: center;
-}
-
-.hover {
-  -webkit-transform: scale(1, 1.25);
-          transform: scale(1, 1.25);
-  overflow: hidden;
 }
 
 /*Estilo de -> Reciclaje*/
