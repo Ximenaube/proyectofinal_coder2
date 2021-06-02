@@ -55,7 +55,6 @@ body {
 	
 	h1 {
 		font-size: 50px;
-		margin: 10px;
 		color: $colorTitulo;
 		text-decoration: underline;
 		font-style: bold;
@@ -90,7 +89,6 @@ body {
 	}
 
 	h6	{
-		margin: auto;
 		text-align: center;
 		width: fit-content;
 	}
@@ -102,8 +100,7 @@ main	{
 
 .header {
 	display: flex;
-	align-content: flex-start;
-	
+	flex-wrap: wrap;	
 	.foto {
 		width: 100px;
 		height: 100px;
@@ -117,24 +114,12 @@ main	{
 }
 
 /*Estilos de Home*/
-.banner	{
-	border-style: dotted;
-	border-spacing: 1px;
-	border-color: $colorBorde;
-	padding: 2vw;
-	display: flex;
-	justify-content: space-between;
-
-}
 
 .carousel {
+	margin:auto;
 	max-width: 90%;
 	max-height: 90%;
-	display: flex;
-	justify-content: center;
 }
-
-
 
 /*Estilos de *Componentes*/
 
@@ -175,41 +160,45 @@ color: white;
 	justify-content: space-evenly;
 	padding: 10px;
 	
+	
 	.item1{
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		padding: 16px;
 		align-content: center;
+		margin-bottom: 20px;
 		
 	}
 	.item2{
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		padding: 16px;
 		align-content: center;
+		margin-bottom: 20px;
 		
 	}
 	.item3{
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		padding: 16px;
 		align-content: center;
+		margin-bottom: 20px;
 		
 	}
 	.item4{
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		padding: 16px;
 		align-content: center;
-		
+		margin-bottom: 20px;
 	}
 	.item5{
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		padding: 16px;
 		align-content: center;
-		
+		margin-bottom: 20px;		
 	}
 	.item6{
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 		padding: 16px;
 		align-content: center;
-		
+		margin-bottom: 20px;
 	}
 }
 
@@ -323,15 +312,16 @@ a{
 
 .cuerpo_inst{
 	text-align: justify;
-	color: $colorTitulo;
+	color: $colorSubTitulo;
 
-	h4	{
+	h3	{
 		color: $colorSubTitulo;
-		
 	}
-
 	h5 {
 		text-decoration: underline;
 	}
+}
 
+.texto_inst {
+	margin: 30px;
 }

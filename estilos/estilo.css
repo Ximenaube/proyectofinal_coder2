@@ -49,7 +49,6 @@ Violeta Oscuro #22224f
 
 body h1 {
   font-size: 50px;
-  margin: 10px;
   color: #22224f;
   text-decoration: underline;
   font-style: bold;
@@ -88,7 +87,6 @@ body nav {
 }
 
 body h6 {
-  margin: auto;
   text-align: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -103,8 +101,8 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: start;
-      align-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header .foto {
@@ -118,28 +116,10 @@ main {
 }
 
 /*Estilos de Home*/
-.banner {
-  border-style: dotted;
-  border-spacing: 1px;
-  border-color: #22224f;
-  padding: 2vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 .carousel {
+  margin: auto;
   max-width: 90%;
   max-height: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 /*Estilos de *Componentes*/
@@ -182,6 +162,8 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -194,6 +176,7 @@ main {
   padding: 16px;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-bottom: 20px;
 }
 
 .cards .item2 {
@@ -202,6 +185,7 @@ main {
   padding: 16px;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-bottom: 20px;
 }
 
 .cards .item3 {
@@ -210,6 +194,7 @@ main {
   padding: 16px;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-bottom: 20px;
 }
 
 .cards .item4 {
@@ -218,6 +203,7 @@ main {
   padding: 16px;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-bottom: 20px;
 }
 
 .cards .item5 {
@@ -226,6 +212,7 @@ main {
   padding: 16px;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-bottom: 20px;
 }
 
 .cards .item6 {
@@ -234,6 +221,7 @@ main {
   padding: 16px;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-bottom: 20px;
 }
 
 .img_card {
@@ -365,14 +353,18 @@ a {
 /*Estilo de -> Institucional*/
 .cuerpo_inst {
   text-align: justify;
-  color: #22224f;
+  color: #473c8b;
 }
 
-.cuerpo_inst h4 {
+.cuerpo_inst h3 {
   color: #473c8b;
 }
 
 .cuerpo_inst h5 {
   text-decoration: underline;
+}
+
+.texto_inst {
+  margin: 30px;
 }
 /*# sourceMappingURL=estilo.css.map */
