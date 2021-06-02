@@ -42,18 +42,9 @@ Violeta Oscuro #22224f
 }
 
 * {
-  font-family: calibri;
+  font-family: glacial indifference;
   background-color: #fbf8ee;
   color: #9fa8f0;
-  margin: 1vw;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background-color: #fbf8ee;
-  color: #9fa8f0;
-  margin: 10px;
 }
 
 body h1 {
@@ -96,6 +87,14 @@ body nav {
           justify-content: space-between;
 }
 
+body h6 {
+  margin: auto;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 main {
   background-color: #fbf8ee;
 }
@@ -132,20 +131,15 @@ main {
           justify-content: space-between;
 }
 
-.banner .carousel {
-  max-height: 1000px;
-  max-width: 1000px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-aside {
-  margin: auto;
-  text-align: center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+.carousel {
+  max-width: 90%;
+  max-height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /*Estilos de *Componentes*/

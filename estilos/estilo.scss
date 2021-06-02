@@ -12,6 +12,7 @@ $colorTexto: #9fa8f0;
 $colorFondo: #fbf8ee;
 $colorBorde: #22224f;
 $colorSubTitulo: #473c8b;
+$colorAcento: #473c8b; 
 $colorBoton: #473c8b;
 
 
@@ -45,23 +46,17 @@ $colorBoton: #473c8b;
 }
 
 *	{
-	font-family: calibri;
+	font-family: glacial indifference;
 	background-color: $colorFondo;
 	color: $colorTexto;
-	margin: 1vw;
-	box-sizing: border-box;
-}
+	}
 
 body {
-	background-color: $colorFondo;
-	color: $colorTexto;
-	margin: 10px;
-
+	
 	h1 {
 		font-size: 50px;
 		margin: 10px;
 		color: $colorTitulo;
-		
 		text-decoration: underline;
 		font-style: bold;
 	}
@@ -92,6 +87,12 @@ body {
 		font-size: 20px;
 		display: flex;
 		justify-content: space-between;
+	}
+
+	h6	{
+		margin: auto;
+		text-align: center;
+		width: fit-content;
 	}
 }
 
@@ -124,18 +125,16 @@ main	{
 	display: flex;
 	justify-content: space-between;
 
-	.carousel{	
-		max-height: 1000px;
-		max-width: 1000px;
-		align-self: center;
-	}	
 }
 
-aside	{
-	margin: auto;
-	text-align: center;
-	width: fit-content;
+.carousel {
+	max-width: 90%;
+	max-height: 90%;
+	display: flex;
+	justify-content: center;
 }
+
+
 
 /*Estilos de *Componentes*/
 
@@ -172,6 +171,7 @@ color: white;
 
 .cards {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	padding: 10px;
 	
