@@ -37,7 +37,6 @@ Violeta Oscuro #22224f
   .card_index {
     width: 100%;
     display: block;
-    margin-bottom: 20px;
   }
 }
 
@@ -48,14 +47,14 @@ Violeta Oscuro #22224f
 }
 
 body h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: #22224f;
   text-decoration: underline;
   font-style: bold;
 }
 
 body h2 {
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -103,6 +102,9 @@ main {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .header .foto {
@@ -132,8 +134,9 @@ main {
 
 /*Tablas*/
 #contenido {
+  margin: auto;
   border-collapse: collapse;
-  width: 100%;
+  width: 80%;
 }
 
 #contenido td, #contenido th {

@@ -40,7 +40,6 @@ $colorBoton: #473c8b;
 	.card_index {
 		  width: 100%;
 		  display: block;
-		  margin-bottom: 20px;
 		}
 
 }
@@ -52,16 +51,15 @@ $colorBoton: #473c8b;
 	}
 
 body {
-	
 	h1 {
-		font-size: 50px;
+		font-size: 40px;
 		color: $colorTitulo;
 		text-decoration: underline;
 		font-style: bold;
 	}
 
 	h2 {
-		font-size: 40px;
+		font-size: 30px;
 		text-align: center;
 	}
 
@@ -100,7 +98,8 @@ main	{
 
 .header {
 	display: flex;
-	flex-wrap: wrap;	
+	flex-wrap: wrap;
+	justify-content: flex-end;	
 	.foto {
 		width: 100px;
 		height: 100px;
@@ -130,8 +129,9 @@ main	{
 
 /*Tablas*/
 #contenido {
+	margin: auto;
 	border-collapse: collapse;
-	width: 100%;
+	width: 80%;
 }
 	  
 #contenido td, #contenido th {
