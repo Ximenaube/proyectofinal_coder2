@@ -256,6 +256,11 @@ main {
   max-width: 50%;
 }
 
+.footer1 .foto_footer2 {
+  max-width: 75%;
+  border-radius: 8px;
+}
+
 .container {
   border-radius: 5px;
   background-color: #fbf8ee;
