@@ -65,21 +65,26 @@ body {
 	h2 {
 		font-size: 30px;
 		text-align: center;
+		margin: 0;
+		display: inline-block;
+		width: 100%;
 	}
 
-	h3	{
+	h3 {
+		font-size: 20px ;
+		color: $colorSubTitulo;
+		padding: none;
+	}
+
+	h4	{
 		letter-spacing: 2px;
 		font-size: 20px;
 		text-align: center;
 	}
 
-	h5	{
-		color: $colorSubTitulo;
-		padding: none;
-	}
-
 	p	{
 		font-size: 20px;
+		margin: 0;
 	}
 
 	nav	{
@@ -220,6 +225,7 @@ color: white;
 	
 	margin-left: auto;
 	margin-right: auto;
+	margin: 0;
 
 	.logo_footer {
 		max-height: 50%;
@@ -293,7 +299,17 @@ color: white;
 }
 	
 /*Estilo de -> Reciclaje*/
+
+section {
+	max-width: 100%;
+
+	.himg{
+		max-width: 100%;
+		border-radius: 8px;
+	}
+}
 .container2{
+	max-width: 100%;
 	display: flex;
 	align-content: center;
 
@@ -313,9 +329,7 @@ color: white;
 		text-align: justify;
 	}
 
-	.himg{
-		display: inline-block;
-	}
+
 }
 
 a{
@@ -328,6 +342,7 @@ a{
 .cuerpo_inst{
 	text-align: justify;
 	color: $colorSubTitulo;
+	margin: 0
 
 	h3	{
 		color: $colorSubTitulo;
