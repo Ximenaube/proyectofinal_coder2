@@ -251,18 +251,16 @@ main {
 }
 
 /*Estilos de *Footer*/
-.footer1 {
-  margin-left: auto;
-  margin-right: auto;
-  margin: 0;
+.encabezado_footer {
+  text-align: center;
 }
 
-.footer1 .logo_footer {
+.logo_footer {
   max-height: 50%;
   max-width: 50%;
 }
 
-.footer1 .foto_footer2 {
+.foto_footer2 {
   margin: auto;
   max-width: 100%;
   border-radius: 8px;

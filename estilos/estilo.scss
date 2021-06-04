@@ -45,7 +45,6 @@ $colorBoton: #473c8b;
 	.himg {
 		max-width: auto;
 	}	
-
 }
 
 *	{
@@ -105,7 +104,7 @@ main	{
 	background-color:$colorFondo;
 }
 
-.header {
+.header	{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: flex-end;	
@@ -159,8 +158,8 @@ text-align: left;
 background-color: $colorSubTitulo;
 color: white;
 }
-/*Estilos de Cards*/
 
+/*Estilos de Cards*/
 .cards {
 	display: flex;
 	flex-wrap: wrap;
@@ -220,12 +219,9 @@ color: white;
 }
 
 /*Estilos de *Footer*/
-
-.footer1 {
-	
-	margin-left: auto;
-	margin-right: auto;
-	margin: 0;
+.encabezado_footer {
+	text-align:center;
+}
 
 	.logo_footer {
 		max-height: 50%;
@@ -237,7 +233,7 @@ color: white;
 		max-width: 100%;
 		border-radius: 8px;
 	}
-}
+	
 .container	{
 	border-radius: 5px;
 	background-color: $colorFondo;
@@ -299,7 +295,6 @@ color: white;
 }
 	
 /*Estilo de -> Reciclaje*/
-
 section {
 	max-width: 100%;
 
@@ -328,8 +323,6 @@ section {
 		font-size: 20px;
 		text-align: justify;
 	}
-
-
 }
 
 a{
@@ -338,7 +331,6 @@ a{
 }
 
 /*Estilo de -> Institucional*/
-
 .cuerpo_inst{
 	text-align: justify;
 	color: $colorSubTitulo;
