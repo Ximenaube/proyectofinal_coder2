@@ -92,7 +92,7 @@ body {
 
 	h6	{
 		text-align: center;
-		margin: auto;
+		
 	}
 }
 
@@ -105,8 +105,8 @@ main	{
 	flex-wrap: wrap;
 	justify-content: flex-end;	
 	.foto {
-		width: 100px;
-		height: 100px;
+		max-width: 100px;
+		max-height: 100px;
 	  }
 	h1 {
 		top: 18px;
@@ -217,9 +217,14 @@ color: white;
 /*Estilos de *Footer*/
 
 .footer1 {
-	width: fit-content;
+	
 	margin-left: auto;
 	margin-right: auto;
+
+	.foto_footer {
+		max-height: 50%;
+		max-width: 50%;
+	}
 }
 .container	{
 	border-radius: 5px;
@@ -227,10 +232,9 @@ color: white;
 	position: relative;
 	padding-top: 25px;
 
-
 	@media (max-width: 768px) {
 		.column, input[type=submit] {
-			width: 100%;
+			max-width: 100%;
 			margin-top: 0;
 			position: relative;
 			flex-direction: column;
@@ -247,6 +251,7 @@ color: white;
 		flex-direction: column;
 		display: table;
 		clear: both;
+	
 	  }
 
 	  input[type=text], select {

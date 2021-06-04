@@ -90,7 +90,6 @@ body nav {
 
 body h6 {
   text-align: center;
-  margin: auto;
 }
 
 main {
@@ -109,8 +108,8 @@ main {
 }
 
 .header .foto {
-  width: 100px;
-  height: 100px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .header h1 {
@@ -248,11 +247,13 @@ main {
 
 /*Estilos de *Footer*/
 .footer1 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer1 .foto_footer {
+  max-height: 50%;
+  max-width: 50%;
 }
 
 .container {
@@ -264,7 +265,7 @@ main {
 
 @media (max-width: 768px) {
   .container .column, .container input[type=submit] {
-    width: 100%;
+    max-width: 100%;
     margin-top: 0;
     position: relative;
     -webkit-box-orient: vertical;
